@@ -1,3 +1,4 @@
+/* common */
 body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
@@ -6,9 +7,14 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 로고 */
 header {
   background-color: blueviolet;
+  position: relative;
 }
 header .lnner {
   position: relative;
@@ -25,4 +31,41 @@ header .logo {
   height: 75px;
   margin: auto;
 }
-header .logo img {}
+
+/* 서브 메뉴 */
+header .sub_menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin: auto;
+  display: flex;
+}
+header .sub_menu ul.menu {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+header .sub_menu ul.menu li {
+  position: relative;
+}
+header .sub_menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub_menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub_menu ul.menu li a {
+  display: block;
+  padding: 11px 16px;
+  font-size: 13px;
+  color: #656565;
+}
+header .sub_menu ul.menu li a:hover {
+  color: #000;
+}
