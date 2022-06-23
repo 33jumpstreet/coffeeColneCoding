@@ -1,52 +1,61 @@
-/* common */
+/* COMMON */
 body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
-  border-width: 400px;
+  font-weight: 400;
   line-height: 1.4;
   color: #333;
 }
-
 a {
   text-decoration: none;
 }
-
-/* 로고 */
-header {
-  background-color: #f6f5f0;
-  position: relative;
-}
-header .lnner {
-  position: relative;
+.inner {
   width: 1100px;
-  height: 120px;
   margin: 0 auto;
+  position: relative;
 }
-header .logo {
+img {
+  display: block;
+}
+
+
+/* HEADER */
+/* HEADER - 로고 */
+header {
+  background: #F6F5F0;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+}
+header > .inner {
+  height: 120px;
+}
+header .inner a.logo {
+  height: 75px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  height: 75px;
   margin: auto;
 }
 
-/* 서브 메뉴 */
-header .sub_menu {
+/* HEADER - 서브메뉴 */
+header .sub-menu {
   position: absolute;
   top: 10px;
   right: 0;
-  margin: auto;
   display: flex;
 }
-header .sub_menu ul.menu {
-  display: flex;
+header .sub-menu ul.menu {
   font-family: Arial, sans-serif;
+  display: flex;
 }
-header .sub_menu ul.menu li {
+header .sub-menu ul.menu li {
   position: relative;
 }
-header .sub_menu ul.menu li::before {
+header .sub-menu ul.menu li::before {
   content: "";
   width: 1px;
   height: 12px;
@@ -56,25 +65,24 @@ header .sub_menu ul.menu li::before {
   bottom: 0;
   margin: auto;
 }
-header .sub_menu ul.menu li:first-child::before {
+header .sub-menu ul.menu li:first-child::before {
   display: none;
 }
-header .sub_menu ul.menu li a {
-  display: block;
+header .sub-menu ul.menu li a {
   padding: 11px 16px;
+  display: block;
   font-size: 13px;
   color: #656565;
 }
-header .sub_menu ul.menu li a:hover {
+header .sub-menu ul.menu li a:hover {
   color: #000;
 }
-
-/* 검색 */
-header .sub_menu .search {
+/* HEADER - 검색  */
+header .sub-menu .search {
   position: relative;
   height: 34px;
 }
-header .sub_menu .search input {
+header .sub-menu .search input {
   width: 36px;
   height: 34px;
   padding: 4px 10px;
@@ -87,12 +95,12 @@ header .sub_menu .search input {
   font-size: 12px;
   transition: width .4s;
 }
-header .sub_menu .search input:focus {
-  width: 190px;
-  border-color: #ea9926;
+header .sub-menu .search input:focus {
+  width: 198px;
+  border-color: #EA9926;
 }
-header .sub_menu .search .material-icons {
-  height: 24px; 
+header .sub-menu .search .material-icons {
+  height: 24px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -100,6 +108,70 @@ header .sub_menu .search .material-icons {
   margin: auto;
   transition: .4s;
 }
-header .sub_menu .search.focused .material-icons {
-  opacity: 0;
+
+/* HEADER - 메인메뉴 */
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .main-menu .item:hover .item__name {
+  background-color: #2C2A29;
+  color: #EA9926;
+  border-radius: 6px 6px 0 0;
+}
+header .main-menu .item .item__contents {
+  background-color: orange;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+/* 메인메뉴 - 하위메뉴 */
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2C2A29;
+}
+header .main-menu .item .item__contents .contents__menu > ul {
+  padding: 20px 0;
+  display: flex;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #EA9926;
+}
+header .main-menu .item .item__contents .contents__texture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url(../images/main_menu_pattern.jpg);
+}
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 900;
+}
+header .main-menu .item .item__contents .contents__texture p {
+  color: #EA9926;
+  margin: 4px 0 14px;
 }
