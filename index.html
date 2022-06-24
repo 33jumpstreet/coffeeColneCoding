@@ -29,9 +29,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- style.css -->
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- js -->
   <script defer src="./js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   <!-- HEADER -->
@@ -368,7 +371,7 @@
     <!-- // 배지 -->
   </header>
 
-  <!-- visual 섹션 -->
+  <!-- section - visual -->
   <section class="visual">
     <div class="inner">
       <div class="title fade-in">
@@ -388,6 +391,38 @@
       </div>
     </div>
   </section>
-  <!-- // 섹션 -->
+  <!-- section - visual -->
+
+  <!-- section - Notice -->
+  <section class="notice">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="inner">
+      <div class="inner__left">
+        <h2>공지사항</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">크리스마스 & 연말연시 매장 영업시간 변경 안내</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">[당첨자 발표] 커피 영수증 이벤트</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">애플리케이션 버전 업데이트 안내</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">[당첨자 발표] 전자영수증 이벤트</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="notice-more">
+          <span class="material-icons">add_circle</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- section - Notice -->
+
 </body>
 </html>
