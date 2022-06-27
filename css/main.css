@@ -508,9 +508,9 @@ header .badges .badge {
   left: 50%;
   top: 50%;
   width: 1920px;
-  height: calc(1920px * 9 / 16);
-  margin-left: calc(1920px / -2);
-  margin-top: calc(1920px / -2 * 9/ 16);
+  height: calc(--width * 9 / 16);
+  margin-left: calc(--width / -2);
+  margin-top: calc(--width / -2 * 9/ 16);
 }
 #player {
   width: 100%;

@@ -36,7 +36,7 @@ window.addEventListener("scroll", function() {
       display : 'block'
     });    
   }
-})
+});
 
 // 나타낼 요소(.fade-in)들을 찾기
 const fadeEls = document.querySelectorAll(".visual .fade-in");
@@ -53,7 +53,7 @@ new Swiper('.notice .swiper', {
   direction: 'vertical',
   autoplay : true,
   loop: true
-})
+});
 
 // 프로모션 이미지 슬라이드 효과 - swiper
 new Swiper('.promotion .swiper', {
@@ -71,7 +71,7 @@ new Swiper('.promotion .swiper', {
     prevEl: '.promotion .swiper-button-prev', // 이전 버튼 요소
     nextEl: '.promotion .swiper-button-next' // 다음 버튼 요소
   }
-})
+});
 
 // 버튼을 눌렀을 때 프로모션이 열리고 닫힐 수 있는 기능
 const promotionEl = document.querySelector("section.promotion");
@@ -83,7 +83,7 @@ promotionToggleBtn.addEventListener("click", function() {
   } else {
     promotionEl.classList.add('hide');
   }
-})
+});
 
 // 반복 애니메이션
 gsap.to('.floating1', 1.5, {
@@ -92,18 +92,18 @@ gsap.to('.floating1', 1.5, {
   repeat: -1, // 몇 번 반복하는지를 설정, -1은 무한 반복
   yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
   ease: Power1.easeInout // Easing 함수 적용
-})
+});
 gsap.to('.floating2', 2, {
   delay: .5, // 얼마나 늦게 애니메이션을 시작할 것인지 지연 시간을 설정
   y: 15, // transform: translateY(수치); 와 같음. 수직으로 얼마나 움직일지 설정
   repeat: -1, // 몇 번 반복하는지를 설정, -1은 무한 반복
   yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
   ease: Power1.easeInout // Easing 함수 적용
-})
+});
 gsap.to('.floating3', 2.5, {
   delay: 1.5, // 얼마나 늦게 애니메이션을 시작할 것인지 지연 시간을 설정
   y: 20, // transform: translateY(수치); 와 같음. 수직으로 얼마나 움직일지 설정
   repeat: -1, // 몇 번 반복하는지를 설정, -1은 무한 반복
   yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
   ease: Power1.easeInout // Easing 함수 적용
-})
+});
