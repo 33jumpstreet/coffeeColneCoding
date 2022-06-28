@@ -106,7 +106,6 @@ gsap.to('.floating3', 2.5, {
   repeat: -1, // 몇 번 반복하는지를 설정, -1은 무한 반복
   yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생
   ease: Power1.easeInout // Easing 함수 적용
-<<<<<<< HEAD
 });
 
 // 스크롤 라이브러리
@@ -119,7 +118,4 @@ spyEls.forEach(function(spyEl) {
   })
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수)
-})
-=======
 });
->>>>>>> 076bd170115c8f3782fd3dc4631b92231cd486eb

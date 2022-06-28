@@ -533,17 +533,10 @@ header .badges .badge {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   width: var(--width);
   height: calc(var(--width) * 9 / 16);
   margin-left: calc(var(--width) / -2);
-  margin-top: calc(var(--width) / -2 * 9 / 16);
-=======
-  width: 1920px;
-  height: calc(--width * 9 / 16);
-  margin-left: calc(--width / -2);
-  margin-top: calc(--width / -2 * 9/ 16);
->>>>>>> 076bd170115c8f3782fd3dc4631b92231cd486eb
+  margin-top: calc(var(--width) / -2 * 9/ 16);
 }
 #player {
   width: 100%;
@@ -651,12 +644,16 @@ header .badges .badge {
 /* section - reserve-store */
 .reserve-store {
   background-image: url("../images/reserve_store_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .reserve-store .inner {
   height: 600px;
 }
 
-/* section - fincd store */
+/* section - find store */
 .find-store {
   background-image: url("../images/find_store_bg.jpg");
 }
@@ -697,4 +694,13 @@ header .badges .badge {
 }
 .find-store .text-group .description {
   margin-bottom: 20px;
+}
+
+/* pick your favorite */
+.pick-your-favorite {
+  background-image: url("../images/favorite_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
