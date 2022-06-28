@@ -73,6 +73,18 @@ new Swiper('.promotion .swiper', {
   }
 });
 
+// 어워즈 섹션 슬라이드 효과
+new Swiper('.awards .swiper', {
+  autoplay : true, // 자동 재생 여부
+  loop : true, // 반복 재생 여부
+  spaceBetween : 30, // 슬라이드 사이 여백
+  slidesPerView : 5, // 슬라이드 사이 여백
+  navigation : { // 슬라이드 이전/ 다음 버튼 사용
+    prevEl: '.awards .swiper-button-prev', // 이전 버튼 요소
+    nextEl: '.awards .swiper-button-next' // 다음 버튼 요소
+  }
+});
+
 // 버튼을 눌렀을 때 프로모션이 열리고 닫힐 수 있는 기능
 const promotionEl = document.querySelector("section.promotion");
 const promotionToggleBtn = document.querySelector(".toggle-promotion");

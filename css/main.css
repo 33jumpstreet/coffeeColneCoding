@@ -667,7 +667,6 @@ header .badges .badge {
 .reserve-store .medel:hover .front {
   transform: rotateY(180deg);
 }
-.reserve-store .medel .front img {}
 .reserve-store .medel .back {
   position: absolute;
   transition: 1s;
@@ -677,7 +676,6 @@ header .badges .badge {
 .reserve-store .medel:hover .back {
   transform: rotateY(0deg);
 }
-.reserve-store .medel .back img {}
 .reserve-store .medel .back a.btn {
   position: absolute;
   top: 240px;
@@ -737,3 +735,36 @@ header .badges .badge {
   background-size: cover;
 }
 
+
+/* section Awards */
+.awards {
+  background-color: #272727;
+}
+.awards .inner {
+  padding: 40px 0;
+}
+.awards .swiper-button-prev,
+.awards .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  bottom: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  opacity: .3;
+} 
+.awards .swiper-button-prev {
+  left: -100px;
+}
+.awards .swiper-button-next {
+  right: -100px;
+}
+.awards .swiper-button-prev:hover,
+.awards .swiper-button-next:hover {
+  background-color: #fff;
+  color: #333;
+}
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
+  display: none;
+}
