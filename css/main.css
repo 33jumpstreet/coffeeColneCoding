@@ -651,8 +651,40 @@ header .badges .badge {
 }
 .reserve-store .inner {
   height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.reserve-store .medel {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+.reserve-store .medel .front {
+  position: absolute;
+  transition: 1s;
+}
+.reserve-store .medel:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve-store .medel .front img {}
+.reserve-store .medel .back {
+  position: absolute;
+  transition: 1s;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+.reserve-store .medel:hover .back {
+  transform: rotateY(0deg);
+}
+.reserve-store .medel .back img {}
+.reserve-store .medel .back a.btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 /* section - find store */
 .find-store {
   background-image: url("../images/find_store_bg.jpg");
@@ -704,3 +736,4 @@ header .badges .badge {
   background-position: center;
   background-size: cover;
 }
+
