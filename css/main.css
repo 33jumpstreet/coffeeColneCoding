@@ -533,10 +533,17 @@ header .badges .badge {
   position: absolute;
   left: 50%;
   top: 50%;
+<<<<<<< HEAD
   width: var(--width);
   height: calc(var(--width) * 9 / 16);
   margin-left: calc(var(--width) / -2);
   margin-top: calc(var(--width) / -2 * 9 / 16);
+=======
+  width: 1920px;
+  height: calc(--width * 9 / 16);
+  margin-left: calc(--width / -2);
+  margin-top: calc(--width / -2 * 9/ 16);
+>>>>>>> 076bd170115c8f3782fd3dc4631b92231cd486eb
 }
 #player {
   width: 100%;
