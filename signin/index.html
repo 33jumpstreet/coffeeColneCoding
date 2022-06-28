@@ -28,11 +28,12 @@
   <!-- 구글 material Icon -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- style.css -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/signin.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- js -->
-  <script defer src="../js/main.js"></script>
   <script defer src="../js/youtube.js"></script>
+  <script defer src="../js/common.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -362,6 +363,28 @@
       <!-- // 메인메뉴 -->
     </div>
   </header>
+  <!-- sign in -->
+  <section class="signin">
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2>헤로피 커피에 오신 것을 환영합니다.</h2>
+      <form action="">
+        <input type="text" placeholder="아이디를 입력하세요.">
+        <input type="password" placeholder="비밀번호를 입력하세요.">
+        <button type="submit" class="btn btn--primary block">로그인</button>
+        <p>
+          비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니, <br />
+          정기적으로 비밀번호를 변경하세요!
+        </p>
+      </form>
+      <div class="actions">
+        <a href="#">회원가입</a>
+        <a href="#">아이디 찾기</a>
+        <a href="#">비밀번호 찾기</a>
+      </div>
+    </div>
+  </section>
+  <!-- sign in -->
   <!-- FOOTER -->
   <footer>
     <div class="inner">
