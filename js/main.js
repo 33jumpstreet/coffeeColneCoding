@@ -1,24 +1,3 @@
-// 검색창 요소 찾기 
-const searchEl = document.querySelector(".search");
-const searchInputEl = document.querySelector(".search input");
-
-// 검색창 요소를 클릭하면 실행
-searchEl.addEventListener("click", function() {
-  searchInputEl.focus();
-});
-
-// 검색창 요소 내부 실제 input 요소에 포커스되면 실행
-searchInputEl.addEventListener('focus', function() {
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-});
-
-// 검색한 요소 내부 실제 input 요소에서 포커스가 해제(블러)되며 실행
-searchInputEl.addEventListener('blur', function() {
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-});
-
 // 페이지 스크롤에 따른 요소 제어
 const badgeEl = document.querySelector("header .badges");
 const toTopEl = document.querySelector("#to-top");
@@ -77,7 +56,7 @@ new Swiper('.promotion .swiper', {
   // direction : horizontal; // 수평 슬라이드
   autoplay : true, // 자동 재생 여부
   loop : true, // 반복 재생 여부
-  slidesPerView : 3, // 슬라이드 사이 여백
+  slidesPerView : 3, // 슬라이드 보이는 개수
   spaceBetween : 10, // 슬라이드 사이 여백
   centeredSlides: true, // 1번 슬라이드 가운데 보이기
   pagination : { // 페이지 번호 사용
@@ -95,7 +74,7 @@ new Swiper('.awards .swiper', {
   autoplay : true, // 자동 재생 여부
   loop : true, // 반복 재생 여부
   spaceBetween : 30, // 슬라이드 사이 여백
-  slidesPerView : 5, // 슬라이드 사이 여백
+  slidesPerView : 5, // 슬라이드 보이는 개수
   navigation : { // 슬라이드 이전/ 다음 버튼 사용
     prevEl: '.awards .swiper-button-prev', // 이전 버튼 요소
     nextEl: '.awards .swiper-button-next' // 다음 버튼 요소
@@ -149,7 +128,4 @@ spyEls.forEach(function(spyEl) {
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수)
 });
 
-// 페이지가 출력되는 연도를 JS로 자동화
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
 
