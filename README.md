@@ -77,6 +77,7 @@ https://swiperjs.com/
 #
 ### 8.  YouTube Player API
 - IFrame Player API를 통해 웹사이트에 YouTube 동영상 플레이어를 퍼가고 JavaScript를 사용하여 플레이어를 제어할 수 있습니다.  
+- https://developers.google.com/youtube/iframe_api_reference?hl=ko  
 #
 ### 9. 스크롤 위치에 따라 각 섹션의 요소를 애니메이션으로 구현 - ScrollMagic.js 
 - cdn  
